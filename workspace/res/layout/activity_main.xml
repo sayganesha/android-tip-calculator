@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editInputAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="31dp"
+        android:digits="0123456789."
+        android:ems="10"
+        android:hint="@string/edtTotalAmount" >
+
+        <requestFocus />
+    </EditText>
+
+    <SeekBar
+        android:id="@+id/tipPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editInputAmount"
+        android:layout_alignRight="@+id/editInputAmount"
+        android:layout_below="@+id/editInputAmount"
+        android:layout_marginTop="23dp"
+        android:indeterminate="false"
+        android:max="@integer/MaxTipPercent"
+        android:onClick="onProgressChanged"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipPercent"
+        android:layout_below="@+id/tipPercent"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:hint="@string/textDefaultAmount"
+        android:text="@string/textDefaultAmount"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/totalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labelTotalTip"
+        android:layout_alignBottom="@+id/labelTotalTip"
+        android:layout_alignLeft="@+id/totalAmount"
+        android:text="@string/textDefaultAmount"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/labelTotalTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="66dp"
+        android:text="@string/labelTotalTip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:text="@string/labalTotal" />
+
+    <TextView
+        android:id="@+id/tipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tipPercent"
+        android:layout_toRightOf="@+id/tipPercent"
+        android:text="TextView"
+        android:textStyle="italic" />
+
+</RelativeLayout>

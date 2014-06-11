@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edtTotalAmount">Enter Amount</string>
+    <string name="labalTotal">Total amount with Tip</string>
+    <string name="textDefaultAmount">0 $</string>
+    <string name="labelTotalTip">"Total Tip "</string>
+
+</resources>
