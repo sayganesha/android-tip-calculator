@@ -29,3 +29,5 @@ Tip Calculator App
 
 
 ![Video Walkthrough](demo_tip_calculator.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
