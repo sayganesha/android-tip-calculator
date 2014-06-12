@@ -85,7 +85,65 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/tipPercent"
         android:layout_toRightOf="@+id/tipPercent"
-        android:text="TextView"
+        android:text="@string/tipLabelInitDisplay"
         android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/lableSplitBetween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/tipPercent"
+        android:layout_marginTop="27dp"
+        android:text="@string/labelSplitBetween"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/etSplitBetween"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lableSplitBetween"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="@string/hintSplitBetween"
+        android:inputType="number"
+        android:maxWidth="@dimen/sbDim" />
+
+    <TextView
+        android:id="@+id/lnTotalTipPerPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbTotalPerPerson"
+        android:layout_below="@+id/lbTotalPerPerson"
+        android:layout_marginTop="19dp"
+        android:text="@string/lbTotalTipPerPerson" />
+
+    <TextView
+        android:id="@+id/lbTotalPerPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelTotalTip"
+        android:layout_below="@+id/totalTip"
+        android:layout_marginTop="17dp"
+        android:text="@string/lbTotalPerPerson" />
+
+    <TextView
+        android:id="@+id/tvTotalPerPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lbTotalPerPerson"
+        android:layout_alignBottom="@+id/lbTotalPerPerson"
+        android:layout_alignLeft="@+id/totalTip"
+        android:text="@string/textDefaultAmount"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTipPerPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lnTotalTipPerPerson"
+        android:layout_alignLeft="@+id/tvTotalPerPerson"
+        android:text="@string/textDefaultAmount"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

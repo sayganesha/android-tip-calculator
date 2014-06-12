@@ -7,5 +7,10 @@
     <string name="labalTotal">Total amount with Tip</string>
     <string name="textDefaultAmount">0 $</string>
     <string name="labelTotalTip">"Total Tip "</string>
+    <string name="tipLabelInitDisplay">15 % tip</string>
+    <string name="labelSplitBetween">Split Between</string>
+    <string name="hintSplitBetween">Enter number of people</string>
+    <string name="lbTotalPerPerson">Total Per Person</string>
+    <string name="lbTotalTipPerPerson">Total Tip Per Person</string>
 
 </resources>
