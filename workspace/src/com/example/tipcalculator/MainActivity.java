@@ -28,7 +28,7 @@ public class MainActivity extends Activity implements OnSeekBarChangeListener, T
 	private TextView tipLable;
 	private SeekBar tipPercent;
 
-	private final String fileName = "todo.txt";
+	private final String fileName = "tip.txt";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
